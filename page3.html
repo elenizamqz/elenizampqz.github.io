@@ -1,0 +1,393 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<title>My Final Webpage</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+  
+<style type="text/css">
+
+    /*====================CSS Reset====================*/
+
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    /*=========================White-Space Styles=========================*/
+
+    body{
+        background-color:  #F5F7F2;
+    }
+
+    header{
+        background-color: #2F4F3E;
+        padding: 3%;
+    }
+
+    #wrapper{
+        width: 80.56640625%; /*825/1024*/
+        margin: 0 auto;
+        background-color: #EADBC8;
+    }
+
+    nav{
+        margin: 0 auto;
+        padding: 1% 0;
+        background-color: #7A9E82;
+        text-align: center;
+        
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    nav ul{
+        width: 85.57575758%; /*706/825*/
+        margin: 0 auto;
+    }
+
+    #feature{
+        width: 81.32575757575758%; /*(706/825)-4.25*/
+        margin: 3% auto 4% auto;
+        padding: 1.5% 2.25% 3.5% 2.25%;
+        background-color: #E6C76E;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-figure{
+        float: left;
+        width: 100%;
+        margin: 0 1em 1em 0;
+        font-size: small;
+    
+    }
+
+    .feature-img{
+        width: 100%;
+        display: block;
+    }
+
+    #main-content{
+        width: 59.39393939393939%; /*(523/825)-4*/
+        float: left;
+        margin: 2%;
+    }
+
+    #sidebar{
+        width: 32.60606060606061%; /*(302/825)-4*/
+        float: left;
+        margin: 2%;
+    }
+
+    .sidebarh2{
+        margin-bottom: 2%;
+    }
+
+    .main-figure{
+        width: 32.50478011472275%; /*170/523*/
+        margin-right: 9.56022944550669%; /*50/523*/
+        float: right;
+    }
+
+    .side-figure{
+        width: 88.0794701986755%; /*266/304*/
+        margin: 0 auto;
+        padding-bottom: 2%;
+    }
+
+    figure{
+        background-color: #E6C76E;
+        margin-bottom: 5%;
+    
+    }
+
+    figure img{
+        max-width: 100%;
+    }
+
+    footer{
+        clear: left;
+        padding: 2%;
+        background-color: #5B3A29;
+    }
+
+    footer p{
+        margin: 0;
+        text-align: center;
+    }
+    .nav-item{
+        display: inline-block;
+        margin-left: 2%;
+        
+    }
+
+    li.nav-item a:visited{
+        color: #F5F7F2;
+    }
+
+    li.nav-item a:hover{
+        color: #E6C76E;
+    }
+
+    li.nav-item a:active{
+        color: #D98E8E;
+    }
+
+    img{
+        width: 100%;
+    }
+    /*===============================type styles============================*/
+    /*
+    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-family: "Roboto Flex", sans-serif;
+    */
+
+    body{
+        font-family: "Lato", sans-serif;
+    }
+
+    article>p{
+        line-height: 130%;
+    }
+
+    .feature-text{
+        width: 100%;
+        margin-left: 2%;
+        font-family: "Lato", sans-serif;
+        font-size: 1.3em;
+        font-weight: Normal;
+        line-height: 125%;
+        letter-spacing: .05em;;
+
+    }
+
+    h1{
+        font-family: "Noto Sans JP", sans-serif;
+        color: #F5F7F2;
+        letter-spacing: .05em;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    h2{
+        font-size: 1.75em;
+        font-weight: bold;
+        color: #2F4F3E;
+        font-family: "Roboto Flex", sans-serif;
+    }
+
+    h3{
+        font-size:1.2em;
+        font-weight: bold;
+        color: #2F4F3E;
+        font-family: "Roboto Flex", sans-serif;
+        margin-top: 5%;
+    }
+
+    #feature h2{
+        margin-bottom: 2%;
+        color: #2F4F3E;
+        font-family: "Roboto Flex", sans-serif;
+    }
+
+    nav>ul>li{
+       font-family: "Lato", sans-serif;
+        
+    }
+
+    p{
+        margin: 2.5% 0;
+        
+    }
+
+    .ul2{
+        list-style-type: circle;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    
+    figcaption{
+        font-family: "Lato", sans-serif;
+        padding-bottom: 1%;
+        
+    }
+
+    #sidebar figcaption{
+        margin-bottom: 3%;
+    }
+
+    footer{
+        color: #F5F7F2;
+        font-family: "Noto Sans JP", sans-serif;
+    }
+
+    li{
+      font-size: 18px;
+      font-family: "Lato", sans-serif; 
+      margin-bottom: 10px;
+      padding: 1% auto;
+      line-height: 150%; 
+    }
+
+     </style>
+
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudfare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+    
+        <header>
+            <h1>Animation</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="index.html">About</a></li>
+                <li class="nav-item"><a href="page2.html">Achievements</a></li>
+                <li class="nav-item"><a href="page3.html">Animation</a></li>
+                <li class="nav-item"><a href="page4.html">Music</a></li>
+                <li class="nav-item"><a href="page5.html">Locations</a></li>
+            </ul>
+        </nav>
+        
+        <div id="feature">
+            <h2>Ghibli Animation</h2>
+            <figure class="feature-figure">
+            <img src="kiki.jpg" class="feature-img"/>
+            <figcaption class = "feature-figcaption"><p>"Kiki's Delivery Service"</p></figcaption>
+            </figure>
+            <p class="feature-text">Ghibli art is more than animation—it’s an immersive experience. Films like Spirited Away, My Neighbor Totoro, and Howl’s Moving Castle blend fantasy with realism, where every detail, color, and texture tells a story, creating visuals that are both enchanting and emotionally moving.</p>
+        </div>
+        
+        <div id="main-content">
+
+            <article>
+                <h2>Hand-painted backgrounds and Rich Details</h2>
+                    <p>A hallmark of Studio Ghibli is its hand-painted backgrounds. Unlike digital animation, each scene is meticulously crafted, adding warmth, depth, and a dreamlike quality. In Spirited Away, the bathhouse comes alive with spirits, while Princess Mononoke’s forest feels mystical, making the world fully immersive for viewers.</p>
+                    <figure>
+                    <img src="princessmononoke.jpg"/>
+                    <figcaption><p>"Princess Mononoke"</p></figcaption>
+                    </figure>
+            </article>
+
+            
+            <article>
+            
+                <h2>Expressive Character Designs</h2>
+                    <p>Ghibli characters are simple yet deeply expressive, with eyes conveying powerful emotions, as seen in Chihiro (Spirited Away) or Sophie (Howl’s Moving Castle). The studio emphasizes natural movements—small gestures like adjusting clothes or breathing—making characters feel lifelike and relatable</p>
+            
+            </article>
+
+            
+            <article>
+            
+                <h2>The Role of Nature in Ghibli Art</h2>
+                    <p>Nature is central to Ghibli’s storytelling, with lush forests, vast skies, and flowing water shaping its worlds. Films like My Neighbor Totoro and Nausicaä of the Valley of the Wind showcase this deep connection through breathtaking landscape art.</p>            
+            </article>
+
+            <article>
+                <h2>References</h2>
+                <ul class = "ul2">
+                    <li><a href="https://kalaspot.com/blog/ghibli-art-why-studio-ghiblis-animation-feels-like-a-dream">Ghibli Art: Why Studio Ghibli’s Animation Feels Like a Dream</a></li>
+                </ul>
+            </article>
+
+        </div><!--close main div-->
+
+        <div id="sidebar">
+
+            <article>
+                <h2 class="sidebarh2">Art Techniques</h2>
+
+                    <ul>
+                        <li><h3>Traditional Hand-Drawn Animation</h3>
+                        <p>Studio Ghibli preserves its unique, organic style by continuing to use hand-drawn animation over CGI.</p>
+                        </li>
+                    <li><h3>Layering for Depth</h3>
+                    <p>Ghibli layers elements within scenes to create depth and movement, making its worlds feel truly three-dimensional.</p>
+                    </li>
+                    <li><h3>Fluid Character Animation</h3>
+                    <p>Ghibli captures subtle human movements—fidgeting, breathing, small reactions—that make its characters feel alive.</p>
+                    </li>
+
+                    <li><h3>Use of Negative Space</h3>
+                   <p>Silence and still moments are as important as action in Ghibli films, allowing emotions to settle and making the scenes feel more profound.</p>
+            </ul>
+            </article>
+
+        </div><!--close sidebar div-->
+
+        <footer>
+
+            <p><small>Alud Marquez - Copyright 2025</small></p>
+
+        </footer>
+
+    </div><!--close wrapper div-->
+
+</body>
+</html>
